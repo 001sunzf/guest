@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9073bde9-9d42-4695-94f4-4ee05a912595" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/guest/guest/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/guest/guest/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guest/sign/templates/guest_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/guest/sign/templates/guest_manage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guest/sign/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/guest/sign/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,10 +30,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/guest/sign/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="633">
+            <state relative-caret-position="662">
               <caret line="49" column="72" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="72" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
@@ -47,8 +45,8 @@
       <file leaf-file-name="event_manage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/guest/sign/templates/event_manage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="36" column="6" lean-forward="true" selection-start-line="26" selection-end-line="36" selection-end-column="6" />
+            <state relative-caret-position="792">
+              <caret line="36" column="6" selection-start-line="26" selection-end-line="36" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -59,7 +57,7 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/guest/guest/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
+            <state relative-caret-position="550">
               <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
               <folding>
                 <element signature="e#639#671#0" expanded="true" />
@@ -68,13 +66,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="guest_manage.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="guest_manage.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/guest/sign/templates/guest_manage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="30" column="62" lean-forward="true" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
+            <state relative-caret-position="126">
+              <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -536,8 +533,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/guest/sign/templates/event_manage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="36" column="6" lean-forward="true" selection-start-line="26" selection-end-line="36" selection-end-column="6" />
+        <state relative-caret-position="792">
+          <caret line="36" column="6" selection-start-line="26" selection-end-line="36" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -546,7 +543,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/guest/guest/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
+        <state relative-caret-position="550">
           <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
           <folding>
             <element signature="e#639#671#0" expanded="true" />
@@ -554,23 +551,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guest/sign/templates/guest_manage.html">
+    <entry file="file://$PROJECT_DIR$/guest/sign/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="30" column="62" lean-forward="true" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
+        <state relative-caret-position="662">
+          <caret line="49" column="72" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="72" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guest/sign/views.py">
+    <entry file="file://$PROJECT_DIR$/guest/sign/templates/guest_manage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="49" column="72" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="72" />
+        <state relative-caret-position="126">
+          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
