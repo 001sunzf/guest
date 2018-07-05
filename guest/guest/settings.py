@@ -30,8 +30,8 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-# username == admin，password ==  1
-# username == admin ，password == admin123
+
+# superuser是 username == admin ，password == admin123
 # username == sunzf,password==admin123
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'sign', #添加应用sign
+    'bootstrap3', #添加 bootstrap3的应用模板
 ]
 
 MIDDLEWARE = [
@@ -79,8 +80,13 @@ WSGI_APPLICATION = 'guest.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+        'NAME': 'guest',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'OPTIONS': {'init_command':"SET sql_mode='STRICT_TRANS_TABLES'",},
     }
 }
 
