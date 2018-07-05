@@ -1,0 +1,6 @@
+1、查看git仓库代码状态 git status
+2、增加更新的文件 git add .
+3、提交本地文件到git库  git commit
+4、接下来把代码推送到github服务器 git push origin master
+5、在github可以看到更新的文件
+6、从github下载代码 git clone git@github.com:001sunzf/guest.git
