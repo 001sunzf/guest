@@ -21,7 +21,9 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^index/$', views.index),  # 添加index/路径配置
     url(r'^login_action/$',views.login_action),
-    url(r'^event_manage/$',views.event_manage),
+    url(r'^event_manage/$',views.event_manage), # 添加会议管理
     url(r'^accounts/login/$',views.index),
-    url(r'^search_name/$',views.search_name),
+    url(r'^search_name/$',views.search_name), # 添加姓名搜索
+    url(r'^guest_manage/$',views.guest_manage), # 添加嘉宾管理
+    url(r'^search_realname/$',views.search_realname) # 添加搜索嘉宾名字
 ]
