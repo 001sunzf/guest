@@ -7,7 +7,7 @@ class EventAdmin(admin.ModelAdmin):
 
 class GuestAdmin(admin.ModelAdmin):
     list_display = ['realname','phone','email','sign','create_time','event']
-    search_fields = ['realname','phone'] #搜索栏
-    list_filter = ['sign']  #过滤器
+    search_fields = ['realname','phone'] # 搜索栏啊
+    list_filter = ['sign']  # 过滤器
 admin.site.register(Event,EventAdmin)
 admin.site.register(Guest,GuestAdmin)
