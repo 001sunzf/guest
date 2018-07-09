@@ -38,7 +38,7 @@ def search_name(request):
 # 嘉宾管理
 @login_required
 def guest_manage(request):
-    username = request.session.get('user','') # 读取；浏览器session
+    username = request.session.get('user','') # 读取浏览器session
     guest_list = Guest.objects.all()
     return render(request,"guest_manage.html",{"user":username,"guests":guest_list})
 
