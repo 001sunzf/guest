@@ -49,3 +49,11 @@ def search_realname(request):
     search_realname = request.GET.get("realname",'')
     guest_list = Guest.objects.filter(realname__contains=search_realname)
     return  render(request,"guest_manage.html",{"user":username,"guests":guest_list})
+
+# 嘉宾名称搜索
+@login_required
+def search_realname(request):
+    username = request.session.get('user','')
+    search_realname = request.GET.get("realname",'')
+    guest_list = Guest.objects.filter(realname__contains=search_realname)
+    return  render(request,"guest_manage.html",{"user":username,"guests":guest_list})
