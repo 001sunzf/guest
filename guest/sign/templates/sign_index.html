@@ -36,7 +36,7 @@
                 <br>{{ guest.realname }}
                 <br>{{ guest.phone }}
             </font>
-            {% csrf_token %}
+            {% csrf_token %} <!-- 获取跳转页面cookie-->
         </form>
     </div>
 </div>
