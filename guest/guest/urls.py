@@ -25,5 +25,8 @@ urlpatterns = [
     url(r'^accounts/login/$',views.index),
     url(r'^search_name/$',views.search_name), # 添加姓名搜索
     url(r'^guest_manage/$',views.guest_manage), # 添加嘉宾管理
-    url(r'^search_realname/$',views.search_realname) # 添加搜索嘉宾名字
+    url(r'^search_realname/$',views.search_realname), # 添加搜索嘉宾名字
+    url(r'^sign_index/(?P<event_id>[0-9]+)/$', views.sign_index), # 添加签到链接
+    url(r'^sign_index_action/(?P<event_id>[0-9]+)/$', views.sign_index_action),# 添加签到动作链接
+    url(r'^logout/$',views.logout) # 退出
 ]
