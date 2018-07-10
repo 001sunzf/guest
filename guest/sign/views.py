@@ -50,4 +50,4 @@ def search_realname(request):
     guest_list = Guest.objects.filter(realname__contains=search_realname)
     return  render(request,"guest_manage.html",{"user":username,"guests":guest_list})
 
-# 嘉宾名称搜索
+

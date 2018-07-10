@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="9073bde9-9d42-4695-94f4-4ee05a912595" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guest/sign/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/guest/sign/views.py" afterDir="false" />
     </list>
+=======
+    <list default="true" id="9073bde9-9d42-4695-94f4-4ee05a912595" name="Default" comment="" />
+>>>>>>> Stashed changes
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -199,7 +203,21 @@
       <option name="project" value="LOCAL" />
       <updated>1530782669817</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test01">
+      <created>1531133831780</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1531133831780</updated>
+    </task>
+    <task id="LOCAL-00004" summary="去掉注释的；">
+      <created>1531133870507</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1531133870507</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -273,7 +291,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="test01" />
-    <option name="LAST_COMMIT_MESSAGE" value="test01" />
+    <MESSAGE value="去掉注释的；" />
+    <option name="LAST_COMMIT_MESSAGE" value="去掉注释的；" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/guest/sign/views.py">
