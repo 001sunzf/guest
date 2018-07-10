@@ -3,6 +3,7 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from sign.models import Event,Guest
+from django.core.paginator import Paginator,EmptyPage,PageNotAnInteger
 # Create your views here.
 def index(request):
     return render(request,'index.html')
@@ -40,7 +41,17 @@ def search_name(request):
 def guest_manage(request):
     username = request.session.get('user','') # 读取浏览器session
     guest_list = Guest.objects.all()
-    return render(request,"guest_manage.html",{"user":username,"guests":guest_list})
+    paginator = Paginator(guest_list,2)
+    page = request.GET.get('page')
+    try:
+        contacts = paginator.page(page)
+    except PageNotAnInteger:
+        # if page is not an integer,deliver first page.
+        contacts = paginator.page(1)
+    except EmptyPage:
+        # if page is out of range(e.g.99999),dilver last page of results
+        contacts = paginator.page(paginator.num_pages)
+    return render(request,"guest_manage.html",{"user":username,"guests":contacts})
 
 # 嘉宾名称搜索
 @login_required
@@ -48,6 +59,17 @@ def search_realname(request):
     username = request.session.get('user','')
     search_realname = request.GET.get("realname",'')
     guest_list = Guest.objects.filter(realname__contains=search_realname)
-    return  render(request,"guest_manage.html",{"user":username,"guests":guest_list})
+    paginator = Paginator(guest_list, 2)
+    page = request.GET.get('page')
+    try:
+        contacts = paginator.page(page)
+    except PageNotAnInteger:
+        # if page is not an integer,deliver first page.
+        contacts = paginator.page(1)
+    except EmptyPage:
+        # if page is out of range(e.g.99999),dilver last page of results
+        contacts = paginator.page(paginator.num_pages)
+
+    return  render(request,"guest_manage.html",{"user":username,"guests":contacts})
 
 
