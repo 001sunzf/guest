@@ -13,9 +13,10 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url
+from django.conf.urls import url,include
 from django.contrib import admin
 from sign import views
+
 urlpatterns = [
     url(r'^$',views.index),
     url(r'^admin/', admin.site.urls),
@@ -28,5 +29,6 @@ urlpatterns = [
     url(r'^search_realname/$',views.search_realname), # 添加搜索嘉宾名字
     url(r'^sign_index/(?P<event_id>[0-9]+)/$', views.sign_index), # 添加签到链接
     url(r'^sign_index_action/(?P<event_id>[0-9]+)/$', views.sign_index_action),# 添加签到动作链接
-    url(r'^logout/$',views.logout) # 退出
+    url(r'^logout/$',views.logout), # 退出
+    url(r'^api/',include('sign.urls',namespace='sign')),
 ]

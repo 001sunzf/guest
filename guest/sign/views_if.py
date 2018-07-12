@@ -88,7 +88,7 @@ def add_guest(request):
     guest_limit = Event.objects.filter(event_id=eid)  # 发布会已添加的嘉宾数
 
     if len(guest_limit) >= event_limit:
-        retutn JsonResponse({'status':10024,'message':'evnet number is full.'})
+        return JsonResponse({'status':10024,'message':'evnet number is full.'})
     event_time = Event.objects.get(id=eid).start_time    # 发布会时间
     etime = str(event_time).split('.')[0]
     timeArray = time.strptime(etime,'%Y-%m-%d %H:%M:%S')
