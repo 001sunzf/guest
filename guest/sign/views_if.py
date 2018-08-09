@@ -121,7 +121,7 @@ def get_guest_list(request):
                 guest['realname'] = r.realname
                 guest['phone'] = r.phone
                 guest['email'] = r.email
-                guest[sign] = r.sign
+                guest['sign'] = r.sign
                 datas.append(guest)
             return JsonResponse({'status':200,'message':'success','data':datas})
         else:
