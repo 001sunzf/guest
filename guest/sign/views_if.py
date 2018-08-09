@@ -85,7 +85,7 @@ def add_guest(request):
         return JsonResponse({'status':10023,'message':'event status is not aviailble.'})
 
     event_limit = Event.objects.get(id=eid).limit   # 发布会限制人数
-    guest_limit = Event.objects.filter(event_id=eid)  # 发布会已添加的嘉宾数
+    guest_limit = Guest.objects.filter(event_id=eid)  # 发布会已添加的嘉宾数
 
     if len(guest_limit) >= event_limit:
         return JsonResponse({'status':10024,'message':'evnet number is full.'})
